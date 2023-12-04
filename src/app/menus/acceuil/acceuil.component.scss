@@ -1,0 +1,155 @@
+.slider{
+    .slides{
+        img{
+            animation: zoom 5s ease;
+        }
+        .caption{
+            padding: 10px;
+            background-color: rgba($color: #151f30, $alpha: .7);
+            border-radius: 15px;
+            margin: 30px auto;
+            h4, p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.section-service{
+    background-color: #151f30;
+    
+    h3, h5{
+        color: #151f30;
+        margin-top: 5px;
+        color: #f2f2f2;
+        margin-bottom: 10px;
+    }
+
+    h5{
+        margin-bottom: 5px;
+    }
+
+}
+
+.section-identity{
+   padding-bottom: 50px;
+
+    .container{ 
+        h2{
+            color: #151f30;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.service{
+    .container{
+        h3{
+            color: #151f30;
+        }
+        h5{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    
+}
+
+.parallax-container {
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.section-avantage{
+    background: linear-gradient(to right, #151f30, #2c0e33, #151f30);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.contact-us{
+    padding: 30px 0;
+    
+    .container-fluid{
+        .contact{
+            margin: 30px auto;
+            text-align: center;
+            a{
+                border: #f2f2f2 solid 1px;
+                padding: 20px;
+                border-radius: 15px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.animated-class {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+  
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+  
+@keyframes zoom {
+    0% { transform: scale(2); }
+    100% { transform: scale(1); }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .section-identity{
+        .container{
+            .about{
+                h2{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+    .service{
+        .container-fluid{
+            margin: 0;
+        }
+    }
+
+    .section-avantage{
+        .container-fluid{
+            margin: 0;
+
+            h5{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .container-fluid{
+        .row{
+            .contact{
+                margin: 30px auto;
+                text-align: center;
+                a{
+                    padding: 20px;
+                    font-size: .8rem;
+                }
+            }
+
+        }
+    }
+}

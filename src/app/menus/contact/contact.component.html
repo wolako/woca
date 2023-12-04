@@ -1,0 +1,72 @@
+<div class="banner">
+    <div class="container">
+        <div class="center">
+            <div class="soulogan z-depth-3">
+                <h2 class="white-text">Contactez-nous</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-contact">
+    <div class="container">
+        <h3 class="center-align">Nous Contacter</h3>
+        <div class="contact">
+            <p class="center-align">
+                Nous sommes à votre disposition pour tous vos besoins. N'hésitez pas à nous contacter via ce formulaire.
+            </p>
+        </div> 
+    </div>
+    
+    <div class="main">
+        <div class="container-fluid valign-wrapper"> 
+            <div class="row">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <input id="nom" type="text" formControlName="nom">
+                            <label for="nom">Votre Nom</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="prenom" type="text" formControlName="prenom">
+                            <label for="prenom">Votre Prénom</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" formControlName="email">
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="sujet" type="text" formControlName="sujet">
+                            <label for="sujet">Votre sujet</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="materialize-textarea" formControlName="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <button class="btn" [disabled]="contactForm.invalid">Envoyer message
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div *ngIf="successMessage" class="success-message">
+                        {{ successMessage }}
+                    </div>
+                    <div *ngIf="errorMessage" class="error-message">
+                        {{ errorMessage }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>       
+</div>
+

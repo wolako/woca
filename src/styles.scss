@@ -1,1 +1,172 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@mdi/font/css/materialdesignicons.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lora', serif;
+
+    h3{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+    h4{
+        font-size: 1.8rem;
+    }
+    p{
+        color: #151f30;
+        font-size: 1rem;
+    }
+}
+
+body{
+    //background-color: #f2f2f2;
+    background: linear-gradient(45deg, #cfd4cf, #cecaca, #d4d4da);
+}
+
+.soulogan{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgba($color: #151f30, $alpha: .9);
+}
+
+h3{
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+    color: #f2f2f2;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 5px;
+        background-color: #926f34;
+    }
+}
+
+.btn{
+    border-radius: 25px;
+    background: #0077cc;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #0a1b37;
+        border: #0077cc 1px solid;
+    }
+}
+// section de breadcumb
+// secition detail
+.section-details{
+    .nav-wrapper{
+        padding-top: 5px;
+        .bread{
+            .breadcrumb{
+                color: #fafaff;
+            }
+        }
+    }
+    margin: 0;
+    background-color: #151f30;
+    color: #fafaff;
+    padding: 20px 0;
+
+    .colo{
+        padding: 10px 0;
+    }
+    .row{
+        padding: 30px;
+        .col{
+            padding: 20px;
+        }
+        .compe{
+            margin-top: 30px;
+        }
+        .material-icons{
+            color: #926f34;
+        }
+    }
+    h4{
+        padding: 20px 0;
+    }
+   
+}
+
+.section-service{
+    padding: 30px 0;
+    margin: 0;
+    
+    .container-fluid{
+        padding: 0 50px;
+        .component{
+            cursor: pointer;
+            .col{
+                padding: 20px;
+                .responsive-img{
+                    height: 150px;
+                    padding: 20px;
+                    border-radius: 20px;
+                }
+                &:hover{
+                    background-color: #f2f2f2;
+                    h4{
+                        color: #151f30;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .soulogan{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 90%;
+        border-radius: 5px;
+        
+        h2{
+            font-size: 1.2rem;
+        }
+    }   
+
+    *{
+        h3{
+            font-size: 1.4rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+        h5{
+            font-size: 1.1rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+    
+    .btn{
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+}

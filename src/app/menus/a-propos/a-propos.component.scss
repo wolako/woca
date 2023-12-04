@@ -1,0 +1,58 @@
+.banner{
+    background-image: url('/../assets/images/12.png');
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.about-us,
+.clos{
+    h3{
+        color: #151f30;
+    }
+}
+.equipe{
+    background: linear-gradient(to right, #151f30, #2c0e33, #151f30);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    .container-fluid{
+        margin: 0 50px;
+        .row{
+            padding: 20px 0;
+            img{
+                height: auto;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: #e7a7e9 0 0 10px;
+            }
+            .text{
+                h4{
+                    box-shadow: #e7a7e9 0 0 10px;
+                    border: #fff solid 1px;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+                color: #fff;
+                padding: 10px;
+                
+            }
+        }
+    }
+}
+
+.contact{
+    padding-bottom: 20px;
+    .container{
+        h3{
+            color: #151f30
+        }
+        .btn{
+            align-items: center;
+            margin: 10px auto;
+            border-radius: 25px;
+        }
+    }
+}

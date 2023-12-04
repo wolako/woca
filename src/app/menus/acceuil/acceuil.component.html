@@ -1,0 +1,81 @@
+<div class="slider">
+    <ul class="slides">
+      <li *ngFor="let item of slides">
+        <img [src]="item.images">
+        <div class="caption left-align">
+          <h4>{{ item.serviceName }}</h4>
+          <p class="light grey-text text-lighten-3">{{ item.description }}</p>
+        </div>
+      </li>
+    </ul>
+</div>
+
+<div class="section-identity">
+    <div class="container">
+        <div class="about center-align">
+            <h2 class="center-align">Woca, Votre Partenaire en Communication Digitale</h2>
+            
+            <p class="center-align">
+                Au cœur de la révolution numérique, Woca est là pour vous aider à faire 
+                briller votre marque en ligne. Nous offrons une gamme complète de services 
+                de transformation digitale, conçus pour propulser votre présence sur le web. 
+                Que vous ayez besoin de vidéos captivantes, de designs visuels à couper le 
+                souffle, de sites web innovants ou de stratégies de marketing digital 
+                percutantes, notre équipe d'experts est prête à transformer vos idées en réalité.
+            </p>
+            <div class="center-align">
+                <a class="btn" routerLink="/a-propos">Qui sommes-nous</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-service">
+    <div class="container">
+        <h3 class="center-align">Avec nous, c'est plus de solutions</h3>
+    </div>
+    <div>
+        <woca-services></woca-services>
+    </div>
+</div>
+
+<!-- nos solutions -->
+
+<div class="service">
+    <div class="container">
+        <h3 class="center-align">Nos services</h3>
+        <h5>Découvrer les services que nous vous offrons</h5>
+    </div>
+    <woca-solutions></woca-solutions>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="../assets/images/20.png"></div>
+</div>
+
+<!-- avantage de choisir woca -->
+
+<div class="section-avantage">
+    <woca-atout></woca-atout>
+</div>
+
+<!-- section contact  -->
+
+<div class="contact-us">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col s6">
+                <h4 class="center-align">
+                    Besoin de booster la visibilité votre entreprise ?
+                </h4>
+            </div>
+            <div class="col s6">
+                <div class="contact">
+                    <a routerLink="/contact" class="z-depth-1">Contactez-nous 
+                        <i class="material-icons">chat_bubble</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

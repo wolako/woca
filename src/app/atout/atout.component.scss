@@ -1,0 +1,23 @@
+.container-fluid{
+    margin: 0 50px;
+    padding-top: 15px;
+
+    .row{
+        .avantage{
+            padding: 10px;
+            .atout{
+                background-color: #f2f2f2;
+                border: #f2f2f2 .5px solid;
+                padding: 15px 20px;
+                color: #151f30;
+                border-radius: 10px;
+                margin: 10px 0;
+                box-shadow: 0 5px 10px 0 rgba(197, 194, 194, 0.2);
+
+                .material-icons{
+                    color: #f7d69d;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+nav{
+  background-color:  #0a1b37;
+  box-shadow: 0 18px 25px rgba($color: #0a1b37, $alpha: .7);
+  .container-fluid{
+    margin: 0 50px;
+    
+    .brand-logo{
+        text-transform: uppercase;
+    }
+
+    .rmdi{
+      display: flex;
+      align-items: center;
+    }
+    // .navbar_change {
+    //   position: fixed;
+    //   top: 0;
+    //   width: 100%;
+    //   z-index: 1;
+    //   background: rgba($color: #0a1b37, $alpha: .7)
+    // }
+  }
+
+
+    
+}
+
+/* Styles pour le SideNav */
+.sidenav {   
+    .row{
+      .mdi{
+          font-size: 2.5rem;
+          color: #0a1b37;
+        }
+      margin-top: 200px;
+    }
+  }
+  
+.brand-logo{
+  text-transform: uppercase;
+  color: #fff;
+ }
+
+  /* Styles pour le Dropdown */
+  .dropdown-content {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    min-width: 200px;
+  }
+  
+  .dropdown-content li {
+    clear: both;
+    color: #0a1b37;
+    cursor: pointer;
+    line-height: 1.5rem;
+    padding: 2px 0;
+  }
+  
+  .dropdown-content li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .dropdown-content li a {
+    color: inherit;
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .dropdown-trigger {
+    cursor: pointer;
+  }
+
+  .dropdown-trigger1{
+    padding-top: 0;
+  }
+  
+  /* Styles supplémentaires pour améliorer l'apparence */
+  .dropdown-content li.disabled {
+    color: #999999;
+    cursor: default;
+  }
+  
+  .dropdown-content li.disabled:hover {
+    background-color: transparent;
+  }
+  
