@@ -12,12 +12,18 @@
                 color: #151f30;
                 border-radius: 10px;
                 margin: 10px 0;
-                box-shadow: 0 5px 10px 0 rgba(197, 194, 194, 0.2);
+                box-shadow: 0 5px 10px 0 rgb(250, 249, 249);
 
                 .material-icons{
                     color: #f7d69d;
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-fluid{
+        margin: 0 10px;
     }
 }
