@@ -13,7 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #333642;
+            background-color: #151f30;
             border-radius: 10px;
             width: 90%;
         }
@@ -22,7 +22,7 @@
             cursor: pointer;
             width: 50vw;
             :hover{
-                background: #25253b;
+                background: #0a1b37;
                 border-radius: 10px;
             }
             .svc{                
@@ -62,12 +62,15 @@
                 top: 20%;
                 left: 20px;
                 color: #fff;
-                padding: 0 30px;
-            }
-
-            .service-content p {
-                font-size: 1.5rem;
-                margin-bottom: 10px;
+                padding: 20px 30px;
+                background-color: #151f30;
+                background: rgba($color: #151f30, $alpha: .7);
+                border-radius: 15px;
+                
+                p{
+                    margin-bottom: 10px;
+                    color: #f2f2f2;
+                }
             }
         }
 

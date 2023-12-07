@@ -1,7 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-// import { FormulaireService } from 'src/app/formulaire.service';
+import { FormulaireService } from 'src/app/formulaire.service';
 
 @Component({
   selector: 'app-contact',
@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
   constructor(
     private formbulde : FormBuilder,
     private viewportSroller: ViewportScroller,
-    // private formulaireService: FormulaireService
+    private formulaireService: FormulaireService
   ) { }
 
   ngOnInit(): void {
@@ -35,32 +35,46 @@ export class ContactComponent implements OnInit {
     );
   }
 
-  // submitted = false;
+  submitted = false;
   successMessage: string | null = null;
   errorMessage: string | null = null;
 
   onSubmit(){
 
-    // this.submitted = true;
+    this.submitted = true;
     
+    if (this.contactForm.valid) {
+        this.formulaireService.addContact(this.contactForm.value).subscribe(
+            response => {
+                console.log('Données ajoutées avec succès', response);
+                this.successMessage = 'Votre message a été envoyé avec succès. Merci!';
+                this.errorMessage = null;
+                this.submitted = false;
+                // Réinitialiser le formulaire après l'ajout des données
+                this.contactForm.reset();
+        },
+        error => {
+          // console.error('Erreur lors de l\'ajout des données', error);
+          this.errorMessage = 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer plus tard.';
+          this.successMessage = null;
+        }
+      );
+      
+    }
+
     // if (this.contactForm.valid) {
-    //   this.formulaireService.addContact(this.contactForm.value).subscribe(
-    //     response => {
-    //       console.log('Données ajoutées avec succès', response);
-    //       this.successMessage = 'Votre message a été envoyé avec succès. Merci!';
-    //       this.errorMessage = null;
-    //       this.submitted = false;
-    //       // Réinitialiser le formulaire après l'ajout des données
-    //       this.contactForm.reset();
+    //   const formData = this.contactForm.value;
+    //   this.formulaireService.addContact(formData).subscribe(
+    //     () => {
+    //       console.log('Formulaire soumis avec succès!');
+    //       // Réinitialiser le formulaire ou effectuer d'autres actions nécessaires.
     //     },
     //     error => {
-    //       console.error('Erreur lors de l\'ajout des données', error);
-    //       this.errorMessage = 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer plus tard.';
-    //       this.successMessage = null;
+    //       console.error('Erreur lors de la soumission du formulaire:', error);
     //     }
     //   );
-      
     // }
   }
+  
 
 }

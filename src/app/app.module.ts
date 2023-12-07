@@ -16,6 +16,8 @@ import { ServicesComponent } from './menus/svces/services.component';
 import { AProposComponent } from './menus/a-propos/a-propos.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { AtoutComponent } from './atout/atout.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { AtoutComponent } from './atout/atout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
