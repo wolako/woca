@@ -29,12 +29,12 @@ export class ServicesComponent implements OnInit {
         this.servicePage = '/dev';
         break;
       case 'Marketing digital':
-        this.serviceImage = '../assets/images/17.png';
+        this.serviceImage = '../assets/images/30 .png';
         this.serviceInfo = 'Nous nous occupons du marketing de vos produits';
         this.servicePage = '/marketing';
         break;
       case 'Graphisme':
-        this.serviceImage = '../assets/images/14.png';
+        this.serviceImage = '../assets/images/29.png';
         this.serviceInfo = 'Nous nous occupons de vos images';
         this.servicePage = '/graphisme';
         break;

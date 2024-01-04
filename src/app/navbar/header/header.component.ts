@@ -13,7 +13,6 @@ import { ServicesComponent } from 'src/app/menus/svces/services.component';
 export class HeaderComponent implements OnInit {
 
   MobileSidenavOpen = false;
-  // navbar_var = false;
     
   toogleMobileSidenav() {
   this.MobileSidenavOpen =! this.MobileSidenavOpen; 
@@ -93,12 +92,4 @@ export class HeaderComponent implements OnInit {
   
   }
 
-  // @HostListener("document:scroll")
-  // scroll(){
-  //   if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
-  //     this.navbar_var = true;
-  //   }else{
-  //     this.navbar_var = false;
-  //   }
-  // }
 }
