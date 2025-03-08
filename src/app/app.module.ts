@@ -17,7 +17,11 @@ import { AProposComponent } from './menus/a-propos/a-propos.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { AtoutComponent } from './atout/atout.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { TextAnimationComponent } from './text-animation/text-animation.component';
+import { BookCoachingComponent } from './components/book-coaching/book-coaching.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaypalCheckoutComponent } from './paypal-checkout/paypal-checkout.component';
+import { PaymentSelectionComponent } from './payment-selection/payment-selection.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,11 @@ import { HttpClientModule } from '@angular/common/http';
     AProposComponent,
     SolutionsComponent,
     AtoutComponent,
+    TextAnimationComponent,
+    BookCoachingComponent,
+    PaymentComponent,
+    PaypalCheckoutComponent,
+    PaymentSelectionComponent
   ],
   imports: [
     BrowserModule,

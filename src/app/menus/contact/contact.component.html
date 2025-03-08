@@ -1,24 +1,58 @@
 <div class="banner">
-    <div class="container">
-        <div class="center">
-            <div class="soulogan z-depth-3">
-                <h2 class="white-text">Contactez-nous</h2>
-            </div>
-        </div>
+    <div class="text-left">
+        <h1>Laissez-nous faire de vos rêves une concrétisation</h1>
+        <!-- <p>Que vous recherchiez des services de développement, de design ou de marketing, contactez-nous pour obtenir un devis adapté à vos besoins spécifiques.</p> -->
     </div>
 </div>
 
 <div class="section-contact">
     <div class="container">
-        <h3 class="center-align">Nous Contacter</h3>
-        <div class="contact">
+        <h2 class="center-align">Parlons de Votre Projet</h2>
+        <!-- <div class="contact">
             <p class="center-align">
-                Nous sommes à votre disposition pour tous vos besoins. N'hésitez pas à nous contacter via ce formulaire.
+                Que ce soit par chat, e-mail ou téléphone, notre équipe est là 
+                pour répondre à tous vos besoins. Ne laissez pas vos questions 
+                sans réponse, contactez-nous dès maintenant et laissez-nous 
+                prendre soin de vos besoins avec professionnalisme et diligence.
             </p>
-        </div> 
+        </div>  -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col m4">
+                <p>
+                    Chatter avec nous directement. Nous sommes impatient de discuter avec vous
+                </p>
+                <p>
+                    <a (click)="openChat()">Ouvrir le chat</a>
+                </p>
+            </div> -->
+            <!-- <div class="col m4">
+                <img width="64" height="64" src="https://img.icons8.com/cute-clipart/64/chat.png" alt="chat"/>
+                <p class="center-align">
+                    Chatter directement avec notre équipe de support client
+                </p>
+                <a (click)="openChat()">Ouvrir le chat</a>
+            </div> -->
+            <div class="col m6">
+                <img width="64" height="64" src="https://img.icons8.com/color/48/apple-mail.png" alt="apple-mail"/>
+                <p class="center-align">
+                    Vous pouvez nous contacter par mail
+                </p>
+                <a href="mailto:contact@wocadigital.com">contact@wocadigital.com</a>
+            </div>
+            
+            <div class="col m6">
+                <img width="64" height="64" src="https://img.icons8.com/flat-round/64/phone.png" alt="phone"/>
+                <p class="center-align">Vous pouvez nous joindre sur ces numéros</p>
+                <a href="tel:+33663130630">+33663130630</a> / 
+                <a href="tel:+22890478814">+22890478814</a>
+            </div>
+        </div>
     </div>
     
-    <div class="main">
+    <!-- <div class="main">
         <div class="container-fluid valign-wrapper"> 
             <div class="row">
                 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
@@ -34,17 +68,30 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="email" type="email" formControlName="email">
-                            <label for="email">Email</label>
-                            <!-- <span class="helper-text" data-error="wrong" data-success="right"></span> -->
+                            <input id="phone" type="tel" formControlName="phone">
+                            <label for="phone">Téléphone</label>
+                            <span class="helper-text" data-error="wrong" data-success="right"></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="sujet" type="text" formControlName="sujet">
-                            <label for="sujet">Votre sujet</label>
+                            <input id="email" type="email" formControlName="email">
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right"></span>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select id="services" formControlName="services" class="browser-default">
+                                <option value="" disabled selected>Choisissez en quoi nous pouvons t'aider</option>
+                                <option value="developpement" class="rounded-option">Développement Web</option>
+                                <option value="marketing" class="rounded-option">Marketing Digital</option>
+                                <option value="graphism" class="rounded-option">Design Graphique</option>
+                                <option value="mont-video" class="rounded-option">Montage Vidéo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                     <div class="row">
                         <div class="input-field col s12">
                             <label for="message">Message</label>
@@ -67,6 +114,6 @@
                 </form>
             </div>
         </div>
-    </div>       
+    </div>        -->
 </div>
 

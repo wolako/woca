@@ -26,16 +26,20 @@ export class HeaderComponent implements OnInit {
     {
       subItems:[
         {
+          path: '/book-coaching',
+          name: 'Coaching & Publication de livre',
+        },
+        {
           path: '/dev',
-          name: 'Développement',
+          name: 'Développement web',
         },
         {
           path: '/marketing',
-          name: 'Marketing',
+          name: 'Marketing digital',
         },
         {
           path: '/graphisme',
-          name: 'Graphisme',
+          name: 'Graphisme créatif',
         },
         {
           path: '/mont-video',

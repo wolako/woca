@@ -1,33 +1,23 @@
 nav{
-  background-color:  #0a1b37;
+  background: linear-gradient(to right, #02183d, #1e0841, #051d47);
   // box-shadow: 0 18px 25px rgba($color: #0a1b37, $alpha: .7);
   .container-fluid{
-    margin: 0 50px;
+    margin: 0 20px;
     
     .brand-logo{
-        text-transform: uppercase;
+        text-transform: capitalize;
+        font-weight: bolder;
+        span{
+          color: #c79030;
+          // color: #f52323;
+        }
     }
 
     .rmdi{
       display: flex;
       align-items: center;
     }
-    // .navbar_change {
-    //   position: fixed;
-    //   top: 0;
-    //   width: 100%;
-    //   z-index: 1;
-    //   background: rgba($color: #0a1b37, $alpha: .7)
-    // }
   }
-
-  @media only screen and (max-width: 600px) {
-    .container-fluid{
-      margin: 0 10px;
-    }
-  }
-
-    
 }
 
 /* Styles pour le SideNav */
@@ -42,8 +32,11 @@ nav{
   }
   
 .brand-logo{
-  text-transform: uppercase;
-  color: #fff;
+  text-transform: capitalize;
+  font-weight: bolder;
+  span{
+    color: #c79030;
+    }
  }
 
   /* Styles pour le Dropdown */
@@ -91,3 +84,10 @@ nav{
     background-color: transparent;
   }
   
+  @media only screen and (max-width: 600px) {
+    nav{
+      .container-fluid{
+        margin: 0;
+      }
+    }
+  }

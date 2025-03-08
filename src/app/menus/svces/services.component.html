@@ -1,41 +1,31 @@
-<div class="services">
-    <div class="container-fluid">
-        <div class="background-container"
-            [ngStyle]="{ 'background-image': 'url(' + serviceImage + ')' }">
-            <video *ngIf="!mesServices" autoplay loop muted>
-              <source src="../assets/images/woca_video.mp4" type="video/mp4" class="bg-video">
-            </video>
-            <div *ngIf="mesServices" class="service-details">
-              <img [src]="serviceImage" alt="Service Image" class="service-image">
-              <div class="service-content">
-                  <h4>{{ mesServices }}</h4>
-                  <p>{{ serviceInfo }}</p>
-                  <a class="btn waves-effect waves-light" (click)="redirectToServicePage()">Decouvrir</a>
-              </div>
-            </div>
-        </div>
-
+<div class="section-services">
+    <div class="container-fluid white-text">
+        <h2 class="center-align">Nos services</h2>
         <div class="row">
-            <div class="service" (click)="selectService('Développement web')">
-                <div class="svc">
-                    <h6>Développement web</h6>
-                </div>
+            <div routerLink="/dev" class="component col s12 m6 l4 center">
+                <img src="../assets/images/8.png" class="responsive-img" alt="">
+                <h4>Développement web</h4>
             </div>
-            <div class="service" (click)="selectService('Marketing digital')">
-                <div class="svc">
-                    <h6>Marketing digital</h6>
-                </div>
+        
+            <div routerLink="/marketing" class="component col s12 m6 l4 center">
+                <img src="../assets/images/5.png" class="responsive-img" alt="">
+                <h4>Marketing digital</h4>
             </div>
-            <div class="service" (click)="selectService('Graphisme')">
-                <div class="svc">
-                    <h6>Graphisme</h6>
-                </div>
+        
+            <div routerLink="/graphisme" class="component col s12 m6 l4 center">
+                <img src="../assets/images/7.png" class="responsive-img" alt="">
+                <h4>Graphisme Créatif</h4>
             </div>
-            <div class="service" (click)="selectService('Montage video')">
-                <div class="svc">
-                    <h6>Montage vidéo</h6>
-                </div>
-            </div>      
+        
+            <div routerLink="/mont-video" class="component col s12 m6 l4 center">
+                <img src="../assets/images/4.png" class="responsive-img" alt="">
+                <h4>Montage vidéo</h4>
+            </div>
+
+            <div routerLink="/book-coaching" class="component col s12 m6 l4 center">
+                <img src="../assets/images/b15.png" class="responsive-img" alt="">
+                <h4>Coaching & Publication de livre</h4>
+            </div>
         </div>
     </div>
-</div>  
+</div>

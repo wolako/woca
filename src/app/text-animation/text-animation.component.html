@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="message-container" [@fadeInOut]>
+            <div class="col s12 m4 text-anim">
+                <h4>{{ messages[currentMessageIndex].titre }}</h4>
+                <p>{{ messages[currentMessageIndex].message }}</p>
+            </div>
+            <div class="col s12 m8">
+                <img [src]="messages[currentMessageIndex].imageUrl" alt="Image" class="msg-image">
+            </div>
+        </div>
+    </div>
+</div>

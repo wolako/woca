@@ -1,0 +1,7 @@
+<form (submit)="pay($event)" class="center-align">
+    <div id="card-element"><!-- Stripe Elements will be inserted here --></div>
+    <button type="submit">Payer</button>
+    <button class="checkout" (click)="checkout()">Payer avec Stripe Checkout</button>
+</form>
+<div id="card-errors" role="alert"></div>
+  

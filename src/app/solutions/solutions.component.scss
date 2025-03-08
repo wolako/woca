@@ -1,19 +1,23 @@
 .container-fluid{
-    margin: 0 50px;
+    margin: 40px 50px;
     .row{
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
         .cart{
             border: #151f30 1px;
             border-radius: 10px;
             padding: 12px;
 
             .cart-image{
-                display: flex;
-                justify-content: start;
-                align-items: center;
+                // display: flex;
+                // justify-content: start;
+                // align-items: center;
 
                 img{
                     height: 50px;
                     width: 50px;
+                    margin-right: 10px;
                 }
             }
             
@@ -31,8 +35,32 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     .container-fluid{
-        margin: 0 10px;
+        margin: 10px;
+
+        .row{
+            display: block;
+            justify-content: center;
+
+            .col{
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 992px){
+    .container-fluid{
+        margin: 10px;
+
+        .row{
+            display: block;
+            justify-content: center;
+
+            .col{
+                margin: 10px 0;
+            }
+        }
     }
 }

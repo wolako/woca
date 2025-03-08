@@ -4,30 +4,33 @@
             animation: zoom 5s ease;
         }
         .caption{
-            padding: 10px;
-            background-color: rgba($color: #151f30, $alpha: .7);
-            border-radius: 15px;
-            margin: 30px auto;
-            h4, p{
-                text-align: center;
+            padding: 20px;
+            background-color: rgba($color: #1e0841, $alpha: .5);
+            border-radius: 10px;
+            max-width: 50%;
+            margin-top: 50px;
+
+            h1, p{
+                text-align: left;
+            }
+            p{
+                font-size: 2rem;
             }
         }
     }
 }
 
 .section-service{
-    // background-color: #151f30;
-    background: linear-gradient(to right, #151f30, #2c0e33, #151f30);
-    
-    h3, h5{
-        color: #151f30;
-        margin-top: 5px;
-        color: #f2f2f2;
-        margin-bottom: 10px;
-    }
-
-    h5{
-        margin-bottom: 5px;
+    background: linear-gradient(to right, #02183d, #1e0841, #051d47);
+    .container-fluid{
+        margin: 0 10px;
+        padding-bottom: 20px;
+        h2{
+            margin-top: 5px;
+            padding-top: 20px;
+            color: #fefefe;
+            margin-bottom: 10px;
+        }
     }
 
 }
@@ -44,7 +47,7 @@
 }
 
 .service{
-    .container{
+    .container-fluid{
         h3{
             color: #151f30;
         }
@@ -53,7 +56,6 @@
             margin-bottom: 30px;
         }
     }
-    
 }
 
 .parallax-container {
@@ -63,7 +65,7 @@
 }
 
 .section-avantage{
-    background: linear-gradient(to right, #151f30, #2c0e33, #151f30);
+    background: linear-gradient(to right, #02183d, #1e0841, #051d47);
     margin: 0;
     display: flex;
     align-items: center;
@@ -77,9 +79,12 @@
     
     .container-fluid{
         margin: 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         .contact{
-            margin: 30px auto;
+            // margin-top: 80px;
             text-align: center;
             a{
                 border: #f2f2f2 solid 1px;
@@ -114,6 +119,32 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .slider{
+        .slides{
+            img{
+                animation: zoom 5s ease;
+            }
+            .caption{
+                margin-top: 50px;
+                padding: 20px;
+                background-color: rgba($color: #1e0841, $alpha: .5);
+                border-radius: 10px;
+                max-width: 100%;
+
+                h1{
+                    font-size: 2.3rem;
+                }
+    
+                h1, p{
+                    text-align: left;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
     
     .service{
         .container-fluid{
@@ -130,10 +161,9 @@
     .container-fluid{
         .row{
             .contact{
-                margin: 30px auto;
                 text-align: center;
+                margin-top: 30px;
             }
-
         }
     }
 }

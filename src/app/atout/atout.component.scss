@@ -2,20 +2,25 @@
     margin: 0 50px;
     padding-top: 15px;
 
+    h2{
+        color: #fff;
+    }
     .row{
         .avantage{
             padding: 10px;
             .atout{
-                background-color: #f2f2f2;
+                color: #fff;
                 border: #f2f2f2 .5px solid;
                 padding: 15px 20px;
-                color: #151f30;
                 border-radius: 10px;
                 margin: 10px 0;
-                box-shadow: 0 5px 10px 0 rgb(250, 249, 249);
+               
+                p{
+                    color: #fff;
+                }
 
                 .material-icons{
-                    color: #f7d69d;
+                    color: #c79030;
                 }
             }
         }

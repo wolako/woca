@@ -1,15 +1,14 @@
 .banner{
-    background-image: url('/../assets/images/12.png');
-    height: 70vh;
+    background-image: url('/../assets/images/dev7.png');
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-// section service
-.section-service{
-    h3{
-        color: #151f30;
+// section details
+.section-details{
+    img{
+        height: 490px;
     }
-    margin: 0;
 }
+// section service

@@ -1,13 +1,13 @@
 .banner{
-    background-image: url('/../assets/images/14.png');
-    height: 70vh;
+    background: url('/../assets/images/31.png') rgba($color: #000000, $alpha: .5);
     background-position: center;
     background-size: cover;
+    background-blend-mode: multiply;
     position: relative;
 }
 
 // section service
-.section-service{
+.section-services{
     h3{
         color: #151f30;
     }

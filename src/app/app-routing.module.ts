@@ -8,6 +8,10 @@ import { GraphismeComponent } from './components/graphisme/graphisme.component';
 import { MontVideoComponent } from './components/mont-video/mont-video.component';
 import { ServicesComponent } from './menus/svces/services.component';
 import { AProposComponent } from './menus/a-propos/a-propos.component';
+import { BookCoachingComponent } from './components/book-coaching/book-coaching.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaypalCheckoutComponent } from './paypal-checkout/paypal-checkout.component';
+import { PaymentSelectionComponent } from './payment-selection/payment-selection.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AcceuilComponent },
@@ -17,7 +21,11 @@ const routes: Routes = [
   { path: 'marketing', component: MarketingComponent },
   { path: 'graphisme', component: GraphismeComponent },
   { path: 'mont-video', component: MontVideoComponent },
-  { path: 'services', component: ServicesComponent},
+  { path: 'book-coaching', component: BookCoachingComponent},
+  { path: 'services', component: ServicesComponent },
+  { path: 'payment', component: PaymentComponent },
+  { path: 'paypal-checkout', component: PaypalCheckoutComponent },
+  { path: 'payment-selection', component: PaymentSelectionComponent },
   { path: '', redirectTo: '/accueil', pathMatch: 'full' }
 ];
 

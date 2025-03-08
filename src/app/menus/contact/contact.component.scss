@@ -1,99 +1,187 @@
 .banner{
-    background-image: url('/../assets/images/14.png');
+    position: relative;
+    overflow: hidden;
+    background: url('/../assets/images/cont-ban.png');
     background-position: center;
     background-size: cover;
-    height: 70vh;
-    position: relative;
 
-    .soulogan{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: left
+
+    .text-left {
         position: absolute;
-        top: 60%;
-        
-        padding: 5px 20px;
-       
-        p{
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        max-width: 60%;
+        padding: 20px 8px;
+    
+        h1{
             font-size: 3rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        p{
+            font-size: 1.2rem;
+            margin: 0;
+            color: #fff;
         }
     }
+    
 }
 
 .section-contact{
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
-
-    background: url('/../assets/images/19.png');
+    background-color: #f2f2f2;
     
     .container{
+        h3{
+            color: #222222;
+        }
         .contact{
             padding: 20px 0;
             margin: 10px auto;
             p{
-                color: #f2f2f2;
+                font-size: 16px;
             }
         }
-
-        h3{
-            color: #f2f2f2;
-        }
-
-
     }
-    .main{
-        flex: 1 0 auto;
-        margin: 0;
-        .valign-wrapper{
-            .row{
-                margin-bottom: 0;
-                form{
-                    padding: 20px;
-                    input, textarea{
-                        background-color: #f2f2f2;
-                        padding-left: 10px;
-                        border-radius: 15px;
-                        box-sizing: border-box;
-                    }           
-                    
-                    textarea{
-                        height: 150px;
+
+    .container{
+        .row{
+            .col {
+                text-align: center;
+
+                p{
+                    font-size: 16px;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                }
+
+                a{
+                    // border-radius: 10px;
+                    // border: #f2f2f2 1px solid;
+                    // padding: 10px;
+                    cursor: pointer;
+                    color: #007bff;
+                    text-decoration: none;
+                    margin-bottom: 20px;
+
+                    &:hover{
+                        text-decoration: underline;
                     }
-                    
-                    .input-field{
-                        margin: 0;
-                    }
-        
-                    label{
-                        padding: 0 10px;
-                    }
-        
-                    .success-message {
-                        color: rgb(20, 94, 20);
-                        font-weight: bold;
-                        margin-top: 10px;
-                    }
-                      
-                    .error-message {
-                        color: rgb(240, 24, 24);
-                        font-weight: bold;
-                        margin-top: 10px;
-                    }
+                }
+                img{
+                    margin-top: 15px;
                 }
             }
         }
     }
+    // .main{
+    //     flex: 1 0 auto;
+    //     margin: 0;
+    //     .valign-wrapper{
+    //         .row{
+    //             margin-bottom: 0;
+    //             form{
+    //                 padding: 20px;
+    //                 input, textarea, select{
+    //                     background-color: #f2f2f2;
+    //                     padding-left: 10px;
+    //                     border-radius: 15px;
+    //                     box-sizing: border-box;
+    //                 }           
+                    
+    //                 textarea{
+    //                     height: 150px;
+    //                 }
+                    
+    //                 .input-field{
+    //                     margin: 10px 0;
+    //                 }
+        
+    //                 label{
+    //                     padding: 0 10px;
+    //                 }
+        
+    //                 .success-message {
+    //                     color: rgb(20, 94, 20);
+    //                     font-weight: bold;
+    //                     margin-top: 10px;
+    //                 }
+                      
+    //                 .error-message {
+    //                     color: rgb(240, 24, 24);
+    //                     font-weight: bold;
+    //                     margin-top: 10px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
-@media only screen and (max-width: 600px) {
+// @media only screen and (max-width: 600px)and (max-width: 667px) {
+//     .banner{
+//         .text-left{
+//             padding-bottom: 20px;
+//             h1{
+//                 font-size: 1rem;
+//             }
+//             p{
+//                 font-size: .8rem;
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     }
+//     .section-contact{
+//         padding: 20px;
+
+//         .valign-wrapper{
+//             margin: 0;
+//             padding: 0;
+//             form{
+//                 padding: 0;
+//                 margin: 0;
+//             }
+//         }
+//     }
+// }
+@media only screen and (max-width: 600px)and (max-width: 767px) {
+    .banner{
+        .text-left{
+            padding-bottom: 20px;
+            h1{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+        }
+    }
     .section-contact{
         padding: 20px;
 
-        .valign-wrapper{
-            margin: 0;
-            padding: 0;
-            form{
-                padding: 0;
-                margin: 0;
+        .container{
+            .row{
+                .col {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
             }
         }
+        // .valign-wrapper{
+        //     margin: 0;
+        //     padding: 0;
+        //     form{
+        //         padding: 0;
+        //         margin: 0;
+        //     }
+        // }
     }
 }
